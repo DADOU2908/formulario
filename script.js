@@ -1,4 +1,5 @@
-function validaUsuario() {
+function validaUsuario(event) {
+  event.preventDefault(); // impede o recarregamento da página
   const nome = document.getElementById('nome').value.trim();
   const ddn = document.getElementById('ddn').value.trim();
   const endereco = document.getElementById('endereco').value.trim();
@@ -15,7 +16,7 @@ function validaUsuario() {
   const sexoSelecionado = document.querySelector('input[name="op"]:checked');
   const sexo = sexoSelecionado ? sexoSelecionado.value : '';
 
-  const estadoCivilSelecionado = document.querySelector('input[name="estado_civil"]:checked');
+  const estadoCivilSelecionado = document.querySelector('input[name="ec"]:checked');
   const estadoCivil = estadoCivilSelecionado ? estadoCivilSelecionado.value : '';
 
   const comoSelecionado = document.querySelector('input[name="op2"]:checked');
@@ -38,4 +39,23 @@ function validaUsuario() {
   if (!como) return alert('Por favor, selecione como você nos conheceu');
 
   alert('Formulário enviado com sucesso!');
+  
+  console.log({
+    nome,
+    ddn,
+    sexo,
+    endereco,
+    nt,
+    email,
+    cpf,
+    estadoCivil,
+    nacio,
+    prof,
+    ndf,
+    ndp,
+    escola,
+    eot,
+    como
+  });
+
 }

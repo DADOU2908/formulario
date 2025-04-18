@@ -3,7 +3,7 @@
     <meta charset='UTF-8'>
     <meta name='viewport' content='width=device-width, initial-scale=1.0'>
     <link rel='stylesheet' href='styles.css'>
-    <script src='script.js'></script>
+
     <title>Formulário</title>
 </head>
 
@@ -14,6 +14,7 @@
    <img src='Poké_Ball_icon.svg-removebg-preview (2).png' alt='pokebolaicon'>
 
 </header>
+
 
 <body>
 
@@ -39,7 +40,7 @@
                 <form id='formum'>
                     <div class='color'>
                         <label for='nome'>Nome completo:</label><br>                       
-                        <input type='text' id='nome' name='nome'><br>                                              
+                        <input type='text' id='nome' name='nome' autocomplete="name"><br>                                              
                     </div>
 
                     <div class='color'>
@@ -73,44 +74,44 @@
 
                     <div class='color'>
                         <label for='endereco'>Endereço:</label><br>
-                        <input type='text' id='endereco' name='endereco' placeholder='(Rua, número e bairro)'>
+                        <input type='text' id='endereco' name='endereco' placeholder='(Rua, número e bairro)'autocomplete="street-addres">
                     </div>  
 
                     <div class='color'>
                         <label for='nt'>Número de telefone:</label><br>
-                        <input type='text' id='nt' name='nt'>
+                        <input type='tel' id='nt' name='nt' autocomplete="tel">
                     </div>
 
                     <div class='color'>
                         <label for='email'>E-mail:</label><br>
-                        <input type='email' id='email' name='email'>
+                        <input type='email' id='email' name='email' autocomplete="email">
                     </div>
 
                     <div class='color'>
                         <label for='cpf'>CPF:</label><br>
-                        <input type='text' id='cpf' name='cpf'>
+                        <input type='text' id='cpf' name='cpf'autocomplete="off">
                     </div>
 
                     <p class='color'>Estado civil:</p>
 
                     <div class='color'>
-                        <input type='radio' id='ec' name='ec' value='solteiro' >
-                        <label for='op1'>Solteiro</label><br>
+                        <input type='radio' id='ec1' name='ec' value='solteiro' >
+                        <label for='ec1'>Solteiro</label><br>
                     </div>    
 
                     <div class='color'>
-                        <input type='radio' id='ec' name='ec' value='Casado' >
-                        <label for='op2'>Casado</label><br>
+                        <input type='radio' id='ec2' name='ec' value='Casado' >
+                        <label for='ec2'>Casado</label><br>
                     </div>  
 
                     <div class='color'>
-                        <input type='radio' id='ec' name='ec' value='Viuvo' >
-                        <label for='op3'>Viuvo</label><br>
+                        <input type='radio' id='ec3' name='ec' value='Viuvo' >
+                        <label for='ec3'>Viuvo</label><br>
                     </div>  
 
                     <div class='color'>
-                        <input type='radio' id='ec' name='ec' value='Divorciado' >
-                        <label for='op4'>Divorciado</label><br>
+                        <input type='radio' id='ec4' name='ec' value='Divorciado' >
+                        <label for='ec4'>Divorciado</label><br>
                     </div> 
 
                     <div class='color'>
@@ -164,21 +165,21 @@
 
                         <div class='color'>
                             <input type='radio' id='op4' name='op2' value='Whatsapp'>
-                            <label for='op3'>Pelo Whatsapp</label><br>
+                            <label for='op4'>Pelo Whatsapp</label><br>
                         </div>
 
                         <div class='color'>
                             <input type='radio' id='op5' name='op2' value='Outro'>
-                            <label for='op4'>De outro lugar</label><br>
+                            <label for='op5'>De outro lugar</label><br>
                         </div>
 
                         <div class='color'>
                             <input type='radio' id='op6' name='op2' value='amigo'>
-                            <label for='op5'>De um amigo</label><br>
+                            <label for='op6'>De um amigo</label><br>
                         </div>
                     
 
-                    <button type='submit' onclick='validaUsuario()'>Enviar</button>
+                    <button type='submit' onclick='validaUsuario(event)'>Enviar</button>
                 </form>
 
 
@@ -200,5 +201,6 @@
             <a href='https://pokemondb.net/pokedex/gengar'><img src='https://img.pokemondb.net/sprites/x-y/normal/gengar-mega.png' alt='Gengar'></a>
         </div>
     </div>
+    <script src='script.js'></script>
 </body>
 </html>
