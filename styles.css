@@ -24,6 +24,7 @@ img{
 
 .form{
     text-align:  center;
+
 }
 
 #nome{
@@ -31,8 +32,8 @@ img{
 }
 
 .form__background{
-    margin-right: 300px;
-    margin-left: 300px;
+    margin-right: 50px;
+    margin-left: 100px;
     margin-top: 20px;
     margin-bottom: 20px;
     padding: 80px;
@@ -47,10 +48,7 @@ img{
 
 }
 
-.pokemon__width{
-    width: 100px;   
-    padding: 0px;
-}
+
 
 .pokemons{
     display: flex;
@@ -74,3 +72,28 @@ img{
     flex-direction: column;
 }
 
+.form__background__inis{
+    margin-right: 100px;
+    margin-left: 50px;
+    margin-top: 240px;
+    margin-bottom: 20px;
+    padding: 5px;
+    background-color: rgb(150, 34, 34);
+    display: flex;
+    flex-direction: column;
+}
+
+.form__inis{
+    text-align:  center;
+    display: flex;
+}
+
+.inis{
+     display: flex;
+}
+
+.form__background__inis__dois{
+    background-color: rgb(214, 0, 0);
+    padding: 10px;
+    margin: 10px;
+}
