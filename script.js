@@ -39,7 +39,7 @@ function validaUsuario(event) {
   if (!como) return alert('Por favor, selecione como você nos conheceu');
 
   alert('Formulário enviado com sucesso!');
-  
+
   console.log({
     nome,
     ddn,
@@ -57,5 +57,32 @@ function validaUsuario(event) {
     eot,
     como
   });
+
+  const inikSelecionado = document.querySelector('input[name="inik"]:checked');
+  const inik = inikSelecionado ? inikSelecionado.value : '';
+
+  const inijSelecionado = document.querySelector('input[name="inij"]:checked');
+  const inij = inijSelecionado ? inijSelecionado.value : '';
+  
+  const inihSelecionado = document.querySelector('input[name="inih"]:checked');
+  const inih = inihSelecionado ? inihSelecionado.value : '';
+
+  const inisSelecionado = document.querySelector('input[name="inis"]:checked');
+  const inis = inisSelecionado ? inisSelecionado.value : '';
+
+  const iniuSelecionado = document.querySelector('input[name="inik"]:checked');
+  const iniu = iniuSelecionado ? iniuSelecionado.value : '';
+
+  const inikaSelecionado = document.querySelector('input[name="inik"]:checked');
+  const inika = inikaSelecionado ? inikaSelecionado.value : '';
+
+  const inikSelecionado = document.querySelector('input[name="inik"]:checked');
+  const inik = inikSelecionado ? inikSelecionado.value : '';
+
+  const inikSelecionado = document.querySelector('input[name="inik"]:checked');
+  const inik = inikSelecionado ? inikSelecionado.value : '';
+
+  const inikSelecionado = document.querySelector('input[name="inik"]:checked');
+  const inik = inikSelecionado ? inikSelecionado.value : '';
 
 }
