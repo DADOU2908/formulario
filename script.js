@@ -70,7 +70,7 @@ function validaInicial(event) {
   const inihSelecionado = document.querySelector('input[name="inih"]:checked');
   const inih = inihSelecionado ? inihSelecionado.value : '';
 
-  const inisiSelecionado = document.querySelector('input[name="inis"]:checked');
+  const inisiSelecionado = document.querySelector('input[name="inisi"]:checked');
   const inisi = inisiSelecionado ? inisiSelecionado.value : '';
 
   const iniuSelecionado = document.querySelector('input[name="iniu"]:checked');

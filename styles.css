@@ -7,7 +7,9 @@ header{
     background-color: rgb(255, 72, 72);
     margin: 0px;
     padding: 20px;
+    width: 2200px;
     display: flex;
+    justify-content: space-between;
 }
 
 img{
@@ -81,11 +83,13 @@ img{
     background-color: rgb(150, 34, 34);
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 .form__inis{
     text-align:  center;
     display: flex;
+    justify-content: column;
 }
 
 .inis{
@@ -96,4 +100,8 @@ img{
     background-color: rgb(172, 0, 0);
     padding: 10px;
     margin: 10px;
+}
+
+button{
+    width: 80px;
 }
