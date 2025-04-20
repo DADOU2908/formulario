@@ -57,7 +57,10 @@ function validaUsuario(event) {
     eot,
     como
   });
+}
 
+function validaInicial(event) {
+  event.preventDefault();
   const inikSelecionado = document.querySelector('input[name="inik"]:checked');
   const inik = inikSelecionado ? inikSelecionado.value : '';
 
@@ -67,22 +70,34 @@ function validaUsuario(event) {
   const inihSelecionado = document.querySelector('input[name="inih"]:checked');
   const inih = inihSelecionado ? inihSelecionado.value : '';
 
-  const inisSelecionado = document.querySelector('input[name="inis"]:checked');
-  const inis = inisSelecionado ? inisSelecionado.value : '';
+  const inisiSelecionado = document.querySelector('input[name="inis"]:checked');
+  const inisi = inisiSelecionado ? inisiSelecionado.value : '';
 
-  const iniuSelecionado = document.querySelector('input[name="inik"]:checked');
+  const iniuSelecionado = document.querySelector('input[name="iniu"]:checked');
   const iniu = iniuSelecionado ? iniuSelecionado.value : '';
 
-  const inikaSelecionado = document.querySelector('input[name="inik"]:checked');
+  const inikaSelecionado = document.querySelector('input[name="inika"]:checked');
   const inika = inikaSelecionado ? inikaSelecionado.value : '';
 
-  const inikSelecionado = document.querySelector('input[name="inik"]:checked');
-  const inik = inikSelecionado ? inikSelecionado.value : '';
+  const iniaSelecionado = document.querySelector('input[name="inia"]:checked');
+  const inia = iniaSelecionado ? iniaSelecionado.value : '';
 
-  const inikSelecionado = document.querySelector('input[name="inik"]:checked');
-  const inik = inikSelecionado ? inikSelecionado.value : '';
+  const inigSelecionado = document.querySelector('input[name="inig"]:checked');
+  const inig = inigSelecionado ? inigSelecionado.value : '';
 
-  const inikSelecionado = document.querySelector('input[name="inik"]:checked');
-  const inik = inikSelecionado ? inikSelecionado.value : '';
+  const inipSelecionado = document.querySelector('input[name="inip"]:checked');
+  const inip = inipSelecionado ? inipSelecionado.value : '';
+
+  console.log({
+    inik,
+    inij,
+    inih,
+    inisi,
+    iniu,
+    inika,
+    inia,
+    inig,
+    inip
+  });
 
 }
