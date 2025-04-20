@@ -35,7 +35,7 @@ img{
 
 .form__background{
     margin-right: 50px;
-    margin-left: 100px;
+    margin-left: 50px;
     margin-top: 20px;
     margin-bottom: 20px;
     padding: 80px;
@@ -44,13 +44,19 @@ img{
 
 .pokemon__display{
     display: flex;
+    align-items: flex-start;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 0px; 
+}
+
+.pokemon__display__segundo{
+    display: flex;
     align-items: center;
     margin-left: 50px;
     margin-right: 50px;
 
 }
-
-
 
 .pokemons{
     display: flex;
@@ -75,10 +81,9 @@ img{
 }
 
 .form__background__inis{
-    margin-right: 100px;
+    margin-right: 50px;
     margin-left: 50px;
-    margin-top: 240px;
-    margin-bottom: 20px;
+    margin-top: 20px;
     padding: 5px;
     background-color: rgb(150, 34, 34);
     display: flex;
