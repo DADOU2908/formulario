@@ -38,7 +38,7 @@ function validaUsuario(event) {
   if (!eot) return alert('Por favor, preencha a empresa/instituição');
   if (!como) return alert('Por favor, selecione como você nos conheceu');
 
-  alert('Formulário enviado com sucesso!');
+
 
   console.log({
     nome,
@@ -57,6 +57,7 @@ function validaUsuario(event) {
     eot,
     como
   });
+
 }
 
 function validaInicial(event) {
@@ -98,6 +99,68 @@ function validaInicial(event) {
     inia,
     inig,
     inip
+  });
+
+}
+
+function validaRespostas(event){
+  event.preventDefault();
+  const fav1 = document.getElementById('fav1').value.trim();
+  const fav2 = document.getElementById('fav2').value.trim();
+  const fav3 = document.getElementById('fav3').value.trim();
+  const fav4 = document.getElementById('fav4').value.trim();
+  const fav5 = document.getElementById('fav5').value.trim();
+  const fav6 = document.getElementById('fav6').value.trim();
+  const fav7 = document.getElementById('fav7').value.trim();
+  const fav8 = document.getElementById('fav8').value.trim();
+  const fav9 = document.getElementById('fav9').value.trim();
+  const fav10 = document.getElementById('fav10').value.trim();
+  const fav11 = document.getElementById('fav11').value.trim();
+  const fav12 = document.getElementById('fav12').value.trim();
+  const fav15 = document.getElementById('fav15').value.trim();
+  const fav16 = document.getElementById('fav16').value.trim();
+  const fav17 = document.getElementById('fav17').value.trim();
+  const fav18 = document.getElementById('fav18').value.trim();
+  const fav19 = document.getElementById('fav19').value.trim();
+  const fav20 = document.getElementById('fav20').value.trim();
+  const fav21 = document.getElementById('fav21').value.trim();
+  const fav22 = document.getElementById('fav22').value.trim();
+  const fav23 = document.getElementById('fav23').value.trim();
+  const fav24 = document.getElementById('fav24').value.trim();
+  const fav25 = document.getElementById('fav25').value.trim();
+
+  const fav13Selecionado = document.querySelector('input[name="espok"]:checked');
+  const fav13 = fav13Selecionado ? fav13Selecionado.value : '';
+
+  const fav14Selecionado = document.querySelector('input[name="escha"]:checked');
+  const fav14 = fav14Selecionado ? fav14Selecionado.value : '';
+
+  console.log({
+   fav1,
+   fav2,
+   fav3,
+   fav4,
+   fav5,
+   fav6,
+   fav7,
+   fav8,
+   fav9,
+   fav10,
+   fav11,
+   fav12,
+   fav13,
+   fav14,
+   fav15,
+   fav16,
+   fav17,
+   fav18,
+   fav19,
+   fav20,
+   fav21,
+   fav22,
+   fav23,
+   fav24,
+   fav25
   });
 
 }

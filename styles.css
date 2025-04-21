@@ -40,6 +40,9 @@ img{
     margin-bottom: 20px;
     padding: 80px;
     background-color: rgb(150, 34, 34);
+    display:flex ;
+    flex-direction: column;
+    align-items: center;
 }
 
 .pokemon__display{
@@ -110,3 +113,6 @@ img{
 button{
     width: 80px;
 }
+
+
+
